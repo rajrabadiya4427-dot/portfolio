@@ -148,15 +148,24 @@ const GooeyNav = ({
             z-index: 1;
           }
           .effect.text {
-            color: white;
+            color: black;
             transition: color 0.3s ease;
           }
+          .dark .effect.text {
+            color: white;
+          }
           .effect.text.active {
-            color: blue;
+            color: white;
             font-weight: bold;
+          }
+          .dark .effect.text.active {
+            color: blue;
           }
           .effect.filter {
             filter: blur(7px) contrast(100) blur(0);
+            mix-blend-mode: darken;
+          }
+          .dark .effect.filter {
             mix-blend-mode: lighten;
           }
           .effect.filter::before {
@@ -164,17 +173,23 @@ const GooeyNav = ({
             position: absolute;
             inset: -75px;
             z-index: -2;
+            background: white;
+          }
+          .dark .effect.filter::before {
             background: black;
           }
           .effect.filter::after {
             content: "";
             position: absolute;
             inset: 0;
-            background: white;
+            background: black;
             transform: scale(0);
             opacity: 0;
             z-index: -1;
             border-radius: 9999px;
+          }
+          .dark .effect.filter::after {
+            background: white;
           }
           .effect.active::after {
             animation: pill 0.3s ease both;
@@ -202,9 +217,12 @@ const GooeyNav = ({
             animation: particle calc(var(--time)) ease 1 -350ms;
           }
           .point {
-            background: var(--color);
+            background: black;
             opacity: 1;
             animation: point calc(var(--time)) ease 1 -350ms;
+          }
+          .dark .point {
+            background: var(--color);
           }
           @keyframes particle {
             0% {
@@ -253,7 +271,7 @@ const GooeyNav = ({
             }
           }
           li.active a {
-            color:  transparent;
+            color:  transparent !important;
            
           }
           li.active::after {
@@ -279,21 +297,20 @@ const GooeyNav = ({
             ref={navRef}
             className="flex gap-8 list-none p-0 px-4 m-0 relative z-[3]"
             style={{
-              color: 'white',
               textShadow: '0 1px 1px hsl(205deg 30% 10% / 0.2)'
             }}
           >
             {items.map((item, index) => (
               <li
                 key={index}
-                className={`rounded-full relative cursor-pointer transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-white ${activeIndex === index ? 'active' : ''
+                className={`rounded-full relative cursor-pointer transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-black dark:text-white ${activeIndex === index ? 'active' : ''
                   }`}
               >
                 <a
                   onClick={e => handleClick(e, index)}
                   href={item.href}
                   onKeyDown={e => handleKeyDown(e, index)}
-                  className="outline-none py-[0.6em] px-[1em] font-bold text-white inline-block"
+                  className="outline-none py-[0.6em] px-[1em] font-bold text-black dark:text-white inline-block"
                 >
                   {item.label}
                 </a>

@@ -100,7 +100,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="relative   overflow-hidden bg-[#07020f] px-6 py-24"
+      className="relative   overflow-hidden bg-background px-6 py-24"
     >
       {/* Glow */}
       <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-purple-700/10 blur-[180px]" />

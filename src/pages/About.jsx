@@ -133,7 +133,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-[#07020f] py-24 text-white "
+      className="relative overflow-hidden bg-background py-24 text-foreground "
     >
       {/* Background Glow */}
       <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-700/10 blur-[200px]" />

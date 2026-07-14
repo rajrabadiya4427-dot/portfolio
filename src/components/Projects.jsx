@@ -73,7 +73,7 @@ const Projects = ({ name, description, liveLink, githubLink }) => {
   return (
     <section
       
-      className="bg-[#07020f] px-6 py-24"
+      className="bg-background px-6 py-24"
     >
       <div className="mx-auto max-w-7xl">
 
