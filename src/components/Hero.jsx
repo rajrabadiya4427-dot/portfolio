@@ -47,7 +47,7 @@ const Hero = () => {
           <img 
             src={mee2} 
             alt="Boy Bottom" 
-            className="absolute inset-0 w-full h-full object-cover object-center object-bottom z-0"
+            className="absolute inset-0 w-full h-full object-cover object-center object-bottom z-0 pointer-events-none"
           />
 
           {/* Middle layer text - UI / UX Designer */}
