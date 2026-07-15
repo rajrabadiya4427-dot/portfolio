@@ -31,7 +31,7 @@ const Preloader = ({ setLoading }) => {
                 {
                     opacity: 1,
                     y: 0,
-                    duration: 0.7,
+                    duration: 0.4,
                     ease: "expo.out",
                 }
             );
@@ -39,8 +39,8 @@ const Preloader = ({ setLoading }) => {
             tl.to(textRef.current, {
                 opacity: 0,
                 y: -80,
-                duration: 0.5,
-                delay: 0.3,
+                duration: 0.3,
+                delay: 0.1,
             });
         });
 
