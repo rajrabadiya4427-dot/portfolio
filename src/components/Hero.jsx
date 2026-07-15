@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { gsap } from "gsap";
 const mee1 = "/mee1.png";
 const mee2 = "/mee2.png";
 
@@ -9,63 +8,6 @@ const Hero = () => {
   const idCounter = useRef(0);
   const containerRef = useRef(null);
   const imageWrapperRef = useRef(null);
-  const titleRef = useRef(null);
-  const mobileContentRef = useRef(null);
-
-  useEffect(() => {
-    // GSAP entrance animation
-    const tl = gsap.timeline();
-
-    tl.fromTo(
-      imageWrapperRef.current,
-      {
-        y: 120,
-        scale: 0.95,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        scale: 1,
-        opacity: 1,
-        duration: 1.5,
-        ease: "power3.out",
-      }
-    );
-
-    if (titleRef.current) {
-      tl.fromTo(
-        titleRef.current,
-        {
-          y: 40,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1.2,
-          ease: "power3.out",
-        },
-        "-=1.0"
-      );
-    }
-
-    if (mobileContentRef.current) {
-      tl.fromTo(
-        mobileContentRef.current,
-        {
-          y: 40,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1.2,
-          ease: "power3.out",
-        },
-        "-=1.0"
-      );
-    }
-  }, []);
 
   const handleMouseMove = useCallback((e) => {
     if (!imageWrapperRef.current) return;
@@ -161,7 +103,7 @@ const Hero = () => {
                 preserveAspectRatio="xMidYMax slice"
               />
               <foreignObject x="0" y="0" width="100%" height="100%">
-                <div ref={titleRef} className="absolute left-1/2 top-[65%] -translate-x-1/2 -translate-y-1/2 text-center select-none w-full">
+                <div className="absolute left-1/2 top-[65%] -translate-x-1/2 -translate-y-1/2 text-center select-none w-full">
                   <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-white uppercase drop-shadow-xl nowrap">
                     MERN Stack Developer
                   </h1>
@@ -173,7 +115,7 @@ const Hero = () => {
       </div>
 
       {/* Mobile Intro Content - Centered */}
-      <div ref={mobileContentRef} className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center select-none px-6 md:hidden">
+      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center select-none px-6 md:hidden">
         <h1 className="text-4xl font-extrabold tracking-tight text-white uppercase drop-shadow-xl mb-4">
           MERN Stack Developer
         </h1>
