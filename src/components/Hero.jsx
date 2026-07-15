@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import mee1 from "../assets/mee1.jpeg"
 
 const Hero = () => {
   const [trail, setTrail] = useState([]);
@@ -27,7 +28,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden bg-background flex items-center justify-center">
+    <section className="relative h-screen overflow-hidden bg-background flex items-center justify-center border-b border-black">
       <div 
         ref={containerRef}
         className="relative w-full max-w-4xl h-[60vh] md:h-[80vh] rounded-3xl overflow-hidden shadow-2xl cursor-crosshair mx-4"
@@ -35,7 +36,7 @@ const Hero = () => {
       >
         {/* Bottom Image */}
         <img 
-          src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop" 
+          src={mee1} 
           alt="Boy Bottom" 
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -67,7 +68,7 @@ const Hero = () => {
                     key={p.id} 
                     cx={p.x} 
                     cy={p.y} 
-                    r="80" 
+                    r="90" 
                     fill="black"
                     className="trail-circle"
                     style={{ transformOrigin: `${p.x}px ${p.y}px` }}
