@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import mee1 from "../assets/mee1.png"
-import mee2 from "../assets/mee2.png"
+const mee1 = "/mee1.png";
+const mee2 = "/mee2.png";
 
 
 const Hero = () => {

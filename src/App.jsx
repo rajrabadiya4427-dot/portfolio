@@ -14,15 +14,22 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Preload critical Hero images immediately for browser cache
+    const img1 = new Image();
+    const img2 = new Image();
+    img1.src = "/mee1.png";
+    img2.src = "/mee2.png";
+
+    // Safety timeout to dismiss preloader
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 7500); // 3 seconds
+    }, 4500); // 4.5 seconds
 
     return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
-    return <Preloader />;
+    return <Preloader setLoading={setLoading} />;
   }
 
   return (
