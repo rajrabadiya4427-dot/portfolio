@@ -86,7 +86,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 z-[999] w-full transition-all overflow-x-hidden duration-500 ${
         scrolled
-          ? "bg-white/60 dark:bg-black/60 backdrop-blur-xl border-b border-gray-200 dark:border-white/10"
+          ? "bg-black/60 backdrop-blur-xl border-b border-white/10"
           : "bg-transparent"
       }`}
     >
@@ -94,7 +94,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="logo" ref={logoref}>
           <h1 className="text-3xl font-bold text-purple-500 ">
-            Code<span className="text-black dark:text-white">.</span>
+            Code<span className="text-white">.</span>
           </h1>
           <p className="-mt-2 text-[10px] text-gray-500 dark:text-gray-400">Crafted</p>
         </div>
@@ -107,13 +107,14 @@ const Navbar = () => {
             particleDistances={[80, 10]}
             particleR={80}
             animationTime={500}
+            scrolled={scrolled}
           />
         </div>
 
         <div className="flex items-center gap-4" ref={btnref}>
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-white/10 transition-colors text-black dark:text-white"
+            className="p-2 rounded-full border border-white/30 hover:bg-white/10 transition-colors text-white"
           >
             {isDark ? <Sun size={20} /> : <Moon size={20} />}
           </button>

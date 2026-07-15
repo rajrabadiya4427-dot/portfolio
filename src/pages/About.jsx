@@ -178,7 +178,8 @@ const About = () => {
                 rounded-[32px]
                 border
                 border-purple-500/20
-                bg-white/5
+                bg-black/5
+                dark:bg-white/5
                 backdrop-blur-xl
                 transition-all
                 duration-700
@@ -201,7 +202,7 @@ const About = () => {
 
                 {/* Text */}
                 <div className="absolute bottom-6 left-6">
-                  <h3 className="text-2xl font-bold">
+                  <h3 className="text-2xl font-bold text-white">
                     Raj
                   </h3>
 
@@ -222,20 +223,20 @@ const About = () => {
               </span>
             </h3>
 
-            <p className="mt-6 text-lg leading-8 text-gray-400">
+            <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
               I'm a passionate Frontend & MERN Stack Developer
               focused on creating modern, responsive, and
               user-friendly web applications.
             </p>
 
-            <p className="mt-5 text-lg leading-8 text-gray-400">
+            <p className="mt-5 text-lg leading-8 text-gray-600 dark:text-gray-400">
               I specialize in React.js, Tailwind CSS, GSAP,
               Node.js, Express.js, and MongoDB to build
               full-stack applications with exceptional user
               experiences.
             </p>
 
-            <p className="mt-5 text-lg leading-8 text-gray-400">
+            <p className="mt-5 text-lg leading-8 text-gray-600 dark:text-gray-400">
               My goal is to transform ideas into powerful
               digital products that are visually stunning,
               highly performant, and scalable.
@@ -276,13 +277,13 @@ const About = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="rounded-3xl border border-purple-500/20 bg-white/5 p-8 backdrop-blur-xl transition duration-500 hover:-translate-y-2 hover:border-purple-500"
+                className="rounded-3xl border border-purple-500/20 bg-black/5 dark:bg-white/5 p-8 backdrop-blur-xl transition duration-500 hover:-translate-y-2 hover:border-purple-500"
               >
                 <h4 className="text-xl font-semibold text-purple-400">
                   {item.title}
                 </h4>
 
-                <p className="mt-3 text-gray-400">
+                <p className="mt-3 text-gray-600 dark:text-gray-400">
                   {item.desc}
                 </p>
               </div>
@@ -302,7 +303,7 @@ const About = () => {
           >
             {/* React */}
             <a href="#" className="hover-3d relative w-full cursor-pointer react">
-              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] bg-white/5 text-white bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)] bg-size-[4.95em_4.95em] rounded-3xl">
+              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] tech-card rounded-3xl">
                 <div className="card-body flex flex-col items-center justify-center h-full p-4 sm:p-6 md:p-8">
                   <div className="logo text-5xl sm:text-6xl md:text-7xl mb-3 md:mb-4 text-purple-500 blue">
                     <FaReact />
@@ -319,7 +320,7 @@ const About = () => {
 
             {/* Node */}
             <a href="#" className="hover-3d relative w-full cursor-pointer node">
-              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] bg-white/5 text-white bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)] bg-size-[4.95em_4.95em] rounded-3xl">
+              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] tech-card rounded-3xl">
                 <div className="card-body flex flex-col items-center justify-center h-full p-4 sm:p-6 md:p-8">
                   <div className="logo text-5xl sm:text-6xl md:text-7xl mb-3 md:mb-4 text-purple-500 green">
                     <FaNodeJs />
@@ -336,7 +337,7 @@ const About = () => {
 
             {/* Express */}
             <a href="#" className="hover-3d relative w-full cursor-pointer ex">
-              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] bg-white/5 text-white bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)] bg-size-[4.95em_4.95em] rounded-3xl">
+              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] tech-card rounded-3xl">
                 <div className="card-body flex flex-col items-center justify-center h-full p-4 sm:p-6 md:p-8">
                   <div className="logo text-5xl sm:text-6xl md:text-7xl mb-3 md:mb-4 text-purple-500 white">
                     <SiExpress />
@@ -353,7 +354,7 @@ const About = () => {
 
             {/* MongoDB */}
             <a href="#" className="hover-3d relative w-full cursor-pointer mongo">
-              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] bg-white/5 text-white bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)] bg-size-[4.95em_4.95em] rounded-3xl">
+              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] tech-card rounded-3xl">
                 <div className="card-body flex flex-col items-center justify-center h-full p-4 sm:p-6 md:p-8">
                   <div className="logo text-5xl sm:text-6xl md:text-7xl mb-3 md:mb-4 text-purple-500 green">
                     <SiMongodb />
@@ -370,7 +371,7 @@ const About = () => {
 
             {/* JavaScript */}
             <a href="#" className="hover-3d relative w-full cursor-pointer js">
-              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] bg-white/5 text-white bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)] bg-size-[4.95em_4.95em] rounded-3xl">
+              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] tech-card rounded-3xl">
                 <div className="card-body flex flex-col items-center justify-center h-full p-4 sm:p-6 md:p-8">
                   <div className="logo text-5xl sm:text-6xl md:text-7xl mb-3 md:mb-4 text-purple-500 yellow">
                     <FaJsSquare />
@@ -387,7 +388,7 @@ const About = () => {
 
             {/* GSAP */}
             <a href="#" className="hover-3d relative w-full cursor-pointer gsap">
-              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] bg-white/5 text-white bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)] bg-size-[4.95em_4.95em] rounded-3xl">
+              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] tech-card rounded-3xl">
                 <div className="card-body flex flex-col items-center justify-center h-full p-4 sm:p-6 md:p-8">
                   <div className="logo text-5xl sm:text-6xl md:text-7xl mb-3 md:mb-4 text-purple-500 green">
                     <SiGsap />
@@ -404,7 +405,7 @@ const About = () => {
 
             {/* Tailwind */}
             <a href="#" className="hover-3d relative w-full cursor-pointer tail">
-              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] bg-white/5 text-white bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)] bg-size-[4.95em_4.95em] rounded-3xl">
+              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] tech-card rounded-3xl">
                 <div className="card-body flex flex-col items-center justify-center h-full p-4 sm:p-6 md:p-8">
                   <div className="logo text-5xl sm:text-6xl md:text-7xl mb-3 md:mb-4 text-purple-500 blue">
                     <SiTailwindcss />
@@ -421,7 +422,7 @@ const About = () => {
 
             {/* Git */}
             <a href="#" className="hover-3d relative w-full cursor-pointer git">
-              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] bg-white/5 text-white bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)] bg-size-[4.95em_4.95em] rounded-3xl">
+              <div className="card w-full h-[160px] sm:h-[180px] md:h-[200px] tech-card rounded-3xl">
                 <div className="card-body flex flex-col items-center justify-center h-full p-4 sm:p-6 md:p-8">
                   <div className="logo text-5xl sm:text-6xl md:text-7xl mb-3 md:mb-4 text-purple-500 white">
                     <FaGitAlt />

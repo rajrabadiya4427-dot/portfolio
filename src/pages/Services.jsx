@@ -112,11 +112,11 @@ const Services = () => {
             What I Offer
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold text-white md:text-5xl">
+          <h2 className="mt-6 text-4xl font-bold text-black dark:text-white md:text-5xl">
             Services
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-gray-400">
+          <p className="mx-auto mt-4 max-w-2xl text-gray-600 dark:text-gray-400">
             Helping startups, businesses and creators build
             modern digital experiences that stand out.
           </p>
@@ -128,7 +128,7 @@ const Services = () => {
           <div ref={cards1} className="cursor-pointer">
             <div
 
-              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-3 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]"
+              className="group relative overflow-hidden rounded-3xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-3 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]"
             >
 
 
@@ -137,11 +137,11 @@ const Services = () => {
                   <MonitorSmartphone size={30} />
                 </div>
 
-                <h3 className="mt-6 text-xl font-semibold text-white">
+                <h3 className="mt-6 text-xl font-semibold text-black dark:text-white">
                   Frontend Development
                 </h3>
 
-                <p className="mt-4 leading-relaxed text-gray-400">
+                <p className="mt-4 leading-relaxed text-gray-600 dark:text-gray-400">
                   Modern, responsive and interactive websites built with React,
                   Tailwind CSS and GSAP.
                 </p>
@@ -156,7 +156,7 @@ const Services = () => {
           <div ref={cards2} className="cursor-pointer">
             <div
 
-              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-3 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]"
+              className="group relative overflow-hidden rounded-3xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-3 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]"
             >
 
 
@@ -165,11 +165,11 @@ const Services = () => {
                   <Database size={30} />
                 </div>
 
-                <h3 className="mt-6 text-xl font-semibold text-white">
+                <h3 className="mt-6 text-xl font-semibold text-black dark:text-white">
                   MERN Applications
                 </h3>
 
-                <p className="mt-4 leading-relaxed text-gray-400">
+                <p className="mt-4 leading-relaxed text-gray-600 dark:text-gray-400">
                   Full-stack web applications using MongoDB, Express.js, React
                   and Node.js.
                 </p>
@@ -184,7 +184,7 @@ const Services = () => {
           <div ref={cards3}  className="cursor-pointer">
             <div
 
-              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-3 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]"
+              className="group relative overflow-hidden rounded-3xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-3 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]"
             >
 
 
@@ -193,11 +193,11 @@ const Services = () => {
                   <Code2 size={30} />
                 </div>
 
-                <h3 className="mt-6 text-xl font-semibold text-white">
+                <h3 className="mt-6 text-xl font-semibold text-black dark:text-white">
                   API Integration
                 </h3>
 
-                <p className="mt-4 leading-relaxed text-gray-400">
+                <p className="mt-4 leading-relaxed text-gray-600 dark:text-gray-400">
                   REST APIs, third-party services and secure backend connectivity
                   for scalable applications.
                 </p>
@@ -212,7 +212,7 @@ const Services = () => {
           <div ref={cards4} className="cursor-pointer">
             <div
 
-              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-3 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]"
+              className="group relative overflow-hidden rounded-3xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-3 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]"
             >
 
 
@@ -221,11 +221,11 @@ const Services = () => {
                   <Rocket size={30} />
                 </div>
 
-                <h3 className="mt-6 text-xl font-semibold text-white">
+                <h3 className="mt-6 text-xl font-semibold text-black dark:text-white">
                   Performance Optimization
                 </h3>
 
-                <p className="mt-4 leading-relaxed text-gray-400">
+                <p className="mt-4 leading-relaxed text-gray-600 dark:text-gray-400">
                   Improving speed, SEO, accessibility and user experience for
                   maximum engagement.
                 </p>
@@ -240,12 +240,12 @@ const Services = () => {
 
         {/* CTA */}
         <div ref={cta} className="mt-20 text-center">
-          <div className="inline-flex flex-col items-center rounded-3xl border border-white/10 bg-white/5 px-8 py-10 backdrop-blur-xl">
-            <h3 className="text-2xl font-semibold text-white">
+          <div className="inline-flex flex-col items-center rounded-3xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 px-8 py-10 backdrop-blur-xl">
+            <h3 className="text-2xl font-semibold text-black dark:text-white">
               Have a Project in Mind?
             </h3>
 
-            <p className="mt-3 max-w-xl text-gray-400">
+            <p className="mt-3 max-w-xl text-gray-600 dark:text-gray-400">
               Let's build something amazing together with modern
               technologies and smooth user experiences.
             </p>

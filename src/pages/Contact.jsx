@@ -35,11 +35,11 @@ const Contact = () => {
       className="bg-background px-6 relative py-24 z-9999"
     >
       <div className="mx-auto max-w-3xl">
-        <h2 className="mb-4 text-center text-4xl font-bold text-white">
+        <h2 className="mb-4 text-center text-4xl font-bold text-black dark:text-white">
           Contact Me
         </h2>
 
-        <p className="mb-12 text-center text-gray-400">
+        <p className="mb-12 text-center text-gray-600 dark:text-gray-400">
           Have a project in mind? Let's talk.
         </p>
 
@@ -53,7 +53,7 @@ const Contact = () => {
             name="user_name"
             placeholder="Your Name"
             required
-            className="w-full rounded-xl border border-white/10 bg-white/5 p-4 text-white outline-none"
+            className="w-full rounded-xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-4 text-black dark:text-white outline-none"
           />
 
           <input
@@ -61,12 +61,12 @@ const Contact = () => {
             name="user_email"
             placeholder="Your Email"
             required
-            className="w-full rounded-xl border border-white/10 bg-white/5 p-4 text-white outline-none"
+            className="w-full rounded-xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-4 text-black dark:text-white outline-none"
           />
-          <select name="project-type" id="" className="w-full rounded-xl border border-white/10 bg-white/5 p-4 text-white outline-none">
-            <option value="" className="text-black">Select your project type</option>
-            <option value="Website" className="text-black">Website</option>
-            <option value="Web App" className="text-black">Application</option>
+          <select name="project-type" id="" className="w-full rounded-xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-4 text-black dark:text-white outline-none">
+            <option value="" className="text-black bg-white">Select your project type</option>
+            <option value="Website" className="text-black bg-white">Website</option>
+            <option value="Web App" className="text-black bg-white">Application</option>
           </select>
 
           <textarea
@@ -74,7 +74,7 @@ const Contact = () => {
             name="message"
             placeholder="Your Message or explain your project"
             required
-            className="w-full rounded-xl border border-white/10 bg-white/5 p-4 text-white outline-none"
+            className="w-full rounded-xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-4 text-black dark:text-white outline-none"
           />
 
           <button

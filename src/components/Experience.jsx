@@ -79,11 +79,11 @@ const Experience = () => {
           My Journey
         </span>
 
-        <h2 className="mt-6 text-4xl font-bold text-white md:text-5xl">
+        <h2 className="mt-6 text-4xl font-bold text-black dark:text-white md:text-5xl">
           Experience Timeline
         </h2>
 
-        <p className="mx-auto mt-4 max-w-2xl text-gray-400">
+        <p className="mx-auto mt-4 max-w-2xl text-gray-600 dark:text-gray-400">
           A quick overview of my professional journey, projects,
           and growth as a developer.
         </p>
@@ -100,10 +100,10 @@ const Experience = () => {
           ref={(el) => (cardsRef.current[0] = el)}
           className="relative mb-12 flex items-center md:justify-start"
         >
-          <div className="absolute left-1/2 hidden h-5 w-5 -translate-x-1/2 rounded-full border-4 border-[#07020f] bg-purple-500 md:block" />
+          <div className="absolute left-1/2 hidden h-5 w-5 -translate-x-1/2 rounded-full border-4 border-background bg-purple-500 md:block" />
 
           <div className="w-full md:w-[45%]">
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition-all duration-300 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]">
+            <div className="group rounded-3xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-6 backdrop-blur-xl transition-all duration-300 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]">
               <div className="flex items-center gap-3">
                 <div className="rounded-xl bg-purple-500/20 p-3">
                   <Briefcase
@@ -113,7 +113,7 @@ const Experience = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-xl font-semibold text-black dark:text-white">
                     Frontend Developer & MERN Stack Developer
                   </h3>
 
@@ -123,12 +123,12 @@ const Experience = () => {
                 </div>
               </div>
 
-              <div className="mt-4 flex items-center gap-2 text-gray-400">
+              <div className="mt-4 flex items-center gap-2 text-gray-600 dark:text-gray-400">
                 <Calendar size={16} />
                 <span>2025 - 2026</span>
               </div>
 
-              <p className="mt-4 leading-relaxed text-gray-400">
+              <p className="mt-4 leading-relaxed text-gray-600 dark:text-gray-400">
                 Built modern React applications, optimized
                 performance, integrated REST APIs and collaborated
                 with UI/UX designers. Developed full-stack MERN
@@ -144,10 +144,10 @@ const Experience = () => {
           ref={(el) => (cardsRef.current[1] = el)}
           className="relative mb-12 flex items-center md:justify-end"
         >
-          <div className="absolute left-1/2 hidden h-5 w-5 -translate-x-1/2 rounded-full border-4 border-[#07020f] bg-purple-500 md:block" />
+          <div className="absolute left-1/2 hidden h-5 w-5 -translate-x-1/2 rounded-full border-4 border-background bg-purple-500 md:block" />
 
           <div className="w-full md:w-[45%]">
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition-all duration-300 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]">
+            <div className="group rounded-3xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-6 backdrop-blur-xl transition-all duration-300 hover:border-purple-500 hover:shadow-[0_0_40px_rgba(168,85,247,.25)]">
               <div className="flex items-center gap-3">
                 <div className="rounded-xl bg-purple-500/20 p-3">
                   <Briefcase
@@ -157,23 +157,23 @@ const Experience = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-white">
-                    Add Your Next Experience
+                  <h3 className="text-xl font-semibold text-black dark:text-white">
+                    UI/UX Designer
                   </h3>
 
                   <p className="text-purple-400">
-                    Company Name
+                    SCOTTENEX NEXTGEN LLP
                   </p>
                 </div>
               </div>
 
-              <div className="mt-4 flex items-center gap-2 text-gray-400">
+              <div className="mt-4 flex items-center gap-2 text-gray-600 dark:text-gray-400">
                 <Calendar size={16} />
-                <span>2026 - Present</span>
+                <span>7 July - 6 January (6 Months)</span>
               </div>
 
-              <p className="mt-4 leading-relaxed text-gray-400">
-                Add your next experience details here.
+              <p className="mt-4 leading-relaxed text-gray-600 dark:text-gray-400">
+                Designed user-centric web and mobile interfaces, built high-fidelity wireframes and interactive prototypes, created consistent design systems, and worked on user experience optimization.
               </p>
             </div>
           </div>
