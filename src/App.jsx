@@ -23,7 +23,7 @@ const App = () => {
     // Safety timeout to dismiss preloader
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4500); // 4.5 seconds
+    }, 6800); // 4.5 seconds
 
     return () => clearTimeout(timer);
   }, []);
