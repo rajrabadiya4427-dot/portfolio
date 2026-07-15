@@ -31,7 +31,7 @@ const Preloader = ({ setLoading }) => {
                 {
                     opacity: 1,
                     y: 0,
-                    duration: 1,
+                    duration: 0.4,
                     ease: "expo.out",
                 }
             );
