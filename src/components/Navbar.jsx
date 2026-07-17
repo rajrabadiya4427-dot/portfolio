@@ -84,10 +84,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 z-[999] w-full transition-all overflow-x-hidden duration-500 ${
+      className={`relative z-[999] w-full transition-all overflow-x-hidden duration-500 ${
         scrolled
-          ? "bg-black/60 backdrop-blur-xl border-b border-white/10"
-          : "bg-transparent"
+          ? "bg-black/60 backdrop-blur-xl"
+          : "bg-black"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 md:px-12">

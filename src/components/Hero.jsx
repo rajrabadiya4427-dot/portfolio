@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-const mee1 = "/mee1.png";
-const mee2 = "/mee2.png";
 
+import mee1 from "../assets/mee1.png"
+import mee2 from "../assets/mee2.png"
 
 const Hero = () => {
   const [trail, setTrail] = useState([]);
@@ -41,7 +41,7 @@ const Hero = () => {
         {/* Centered borderless 60% wrapper - Stuck to bottom */}
         <div 
           ref={imageWrapperRef}
-          className="absolute left-1/2 bottom-0 -translate-x-1/2 w-[90vw] md:w-[50vw] h-[95vh] overflow-hidden"
+          className="absolute left-1/2 bottom-0 -translate-x-1/2 w-full h-[95vh] overflow-hidden"
         >
           {/* Bottom Image */}
           <img 
@@ -52,7 +52,7 @@ const Hero = () => {
 
           {/* Middle layer text - UI / UX Designer */}
           <div className="absolute left-1/2 top-[80%] -translate-x-1/2 -translate-y-1/2 z-10 text-center select-none w-full pointer-events-none">
-            <h2 className="text-3xl md:text-6xl font-extrabold tracking-tight text-purple-500 uppercase drop-shadow-2xl">
+            <h2 className="text-3xl md:text-6xl font-extrabold tracking-tight text-purple-500 uppercase drop-shadow-2xl whitespace-nowrap">
               UI / UX Designer
             </h2>
           </div>
@@ -96,15 +96,18 @@ const Hero = () => {
             <g mask="url(#eraser-mask)">
               {/* Background Rect to prevent background image from showing through transparent parts */}
               <rect width="100%" height="100%" className="fill-black" />
-              <image 
-                href={mee1}
-                width="100%"
-                className="h-[95vh]"
-                preserveAspectRatio="xMidYMax slice"
-              />
+              <foreignObject x="0" y="0" width="100%" height="100%">
+                <div className="absolute inset-0 w-full h-full pointer-events-none">
+                  <img 
+                    src={mee1} 
+                    alt="Boy Top" 
+                    className="absolute inset-0 w-full h-full object-cover object-center object-bottom pointer-events-none"
+                  />
+                </div>
+              </foreignObject>
               <foreignObject x="0" y="0" width="100%" height="100%">
                 <div className="absolute left-1/2 top-[65%] -translate-x-1/2 -translate-y-1/2 text-center select-none w-full">
-                  <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-white uppercase drop-shadow-xl nowrap">
+                  <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-white uppercase drop-shadow-xl whitespace-nowrap">
                     MERN Stack Developer
                   </h1>
                 </div>
@@ -116,7 +119,7 @@ const Hero = () => {
 
       {/* Mobile Intro Content - Centered */}
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center select-none px-6 md:hidden">
-        <h1 className="text-4xl font-extrabold tracking-tight text-white uppercase drop-shadow-xl mb-4">
+        <h1 className="text-4xl font-extrabold tracking-tight text-white uppercase drop-shadow-xl mb-4 whitespace-nowrap">
           MERN Stack Developer
         </h1>
         <p className="text-gray-300 text-base max-w-sm leading-relaxed mb-8">
