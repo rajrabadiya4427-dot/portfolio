@@ -31,7 +31,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden bg-black flex flex-col justify-end items-center pb-24">
+    <section className="relative h-screen overflow-hidden bg-black flex flex-col justify-end items-center ">
       {/* Full screen mouse listener container - Desktop Only */}
       <div 
         ref={containerRef}
@@ -41,7 +41,7 @@ const Hero = () => {
         {/* Centered borderless 60% wrapper - Stuck to bottom */}
         <div 
           ref={imageWrapperRef}
-          className="absolute left-1/2 bottom-0 -translate-x-1/2 w-full h-[95vh] overflow-hidden"
+          className="absolute left-1/2 bottom-0 -translate-x-1/2 w-full h-full overflow-hidden"
         >
           {/* Bottom Image */}
           <img 
